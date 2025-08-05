@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="https://www.keralatourism.org/images/kt-logo.png" alt="Kerala Tourism Logo">
+                <div class="logo-text">
+                    <h1>KERALA TOURISM</h1>
+                    <p>Government of Kerala | Ministry of Tourism</p>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search destinations, experiences...">
+                <button>Search</button>
+            </div>
+        </div>
+        
+    <nav>
+    <div class="nav-container">
+        <ul class="main-nav">
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="#destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#destinations">Munnar</a></li>
+                    <li><a href="#destinations">Alleppey</a></li>
+                    <li><a href="#destinations">Kochi</a></li>
+                    <li><a href="#destinations">Wayanad</a></li>
+                    <li><a href="#destinations">Kovalam</a></li>
+                    <li><a href="#destinations">View All</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#experiences">Experiences</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#experiences">Ayurveda</a></li>
+                    <li><a href="#experiences">Backwaters</a></li>
+                    <li><a href="#experiences">Beaches</a></li>
+                    <li><a href="#experiences">Wildlife</a></li>
+                    <li><a href="#experiences">Hill Stations</a></li>
+                </ul>
+            </li>
+            <li><a href="#where-to-stay">Where to Stay</a></li>
+            <li><a href="#things-to-do">Things to Do</a></li>
+            <li><a href="#travel-care">Travel Care</a></li>
+        </ul>
+        
+        <ul class="utility-nav">
+            <li><a href="#">EN</a></li>
+            <li><a href="#" id="loginBtn">Login</a></li>
+        </ul>
+    </div>
+    </nav>
+    </header>
+
+    <div id="loginModal" class="login-modal">
+    <div class="login-modal-content">
+    <span class="close-login">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm" class="login-form">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <p id="loginError" class="error-message"></p>
+    <button type="submit">Login</button>
+</form>
+</div>
+</div>
+
+ <!-- Hero Video Section -->
+    <section class="hero" id="home">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/Kadamakkudy Vibes ✨❣️Embraced by the serene backwaters, Kadamakudy whispers tales of tranquility.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h1>Welcome to God's Own Country</h1>
+                <p>Discover the breathtaking beauty of Kerala's landscapes, culture, and traditions</p>
+                <div class="hero-buttons">
+                    <a href="#destinations" class="btn">Explore Destinations</a>
+                    <a href="#experiences" class="btn btn-outline">View Experiences</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video Controls -->
+        <div class="video-controls">
+            <button class="control-btn" id="playPauseBtn">
+                <i class="fas fa-pause"></i>
+            </button>
+            <button class="control-btn" id="muteBtn">
+                <i class="fas fa-volume-up"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <h2 class="section-title">Popular Destinations</h2>
+        
+        <div class="destination-grid">
+            <div class="destination-card">
+                <div class="destination-img">
+                    <img src="assets/munnar.jpeg" alt="Munnar">
+                </div>
+                <div class="destination-info">
+                    <h3>Munnar</h3>
+                    <p>Munnar rises as three mountain streams merge - Mudrapuzha, Nallathanni and Kundala. 1,600 m above sea level, this hill station was once the summer resort of the British Government in South India.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-img">
+                    <img src="assets/alappy.jpeg" alt="Alappuzha">
+                </div>
+                <div class="destination-info">
+                    <h3>Alappuzha</h3>
+                    <p>Affectionately nicknamed the 'Venice of the East' by travellers from across the world, Alappuzha is a district of immense natural beauty. Embraced by the Arabian Sea in the west and a network of lakes.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-img">
+                    <img src="assets/wayanad.jpeg" alt="Wayanad">
+                </div>
+                <div class="destination-info">
+                    <h3>Wayanad</h3>
+                    <p>Wayanad is a rural district in Kerala state, southwest India. In the east, the Wayanad Wildlife Sanctuary is a lush, forested region with areas of high altitude, home to animals including Asiatic elephants, tigers, leopards and egrets.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-img">
+                    <img src="assets/Kovalam.jpeg" alt="Kovalam">
+                </div>
+                <div class="destination-info">
+                    <h3>Kovalam</h3>
+                    <p>Kovalam is an internationally renowned beach with three adjacent crescent beaches. It has been a favourite haunt of tourists since the 1930s. A massive rocky promontory on the beach has created a beautiful bay of calm waters ideal for sea bathing.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="experiences" id="experiences">
+        <div class="experiences-container">
+            <h2 class="section-title">Unique Experiences</h2>
+            
+            <div class="experience-tabs">
+                <button class="tab-btn active" data-tab="ayurveda">Ayurveda</button>
+                <button class="tab-btn" data-tab="backwaters">Backwaters</button>
+                <button class="tab-btn" data-tab="beaches">Beaches</button>
+                <button class="tab-btn" data-tab="wildlife">Wildlife</button>
+                <button class="tab-btn" data-tab="festivals">Festivals</button>
+            </div>
+            
+            <div class="tab-content active" id="ayurveda">
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-img">
+                            <img src="assets/Ayurveda.jpeg" alt="Ayurveda">
+                        </div>
+                        <div class="experience-info">
+                            <h3>Ayurveda - The Science of Healing</h3>
+                            <p>Kerala's unique equable climate, natural abundance of forests with a wealth of herbs and medicinal plants, and the cool monsoon season are best suited for Ayurveda's curative and restorative packages.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="experience-img">
+                            <img src="assets/wellness.jpeg" alt="Ayurveda Wellness">
+                        </div>
+                        <div class="experience-info">
+                            <h3>Ayurveda Wellness</h3>
+                            <p>Ayurveda is not just about curative treatments but also about prevention of diseases and promotion of health. Kerala offers excellent Ayurveda wellness packages that rejuvenate your body and mind.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="experience-img">
+                            <img src="assets/Panchakarma.jpeg" alt="Panchakarma">
+                        </div>
+                        <div class="experience-info">
+                            <h3>Panchakarma Therapy</h3>
+                            <p>Panchakarma is the ultimate Ayurvedic detoxification program. It is a five-fold treatment for mental and physical well-being that is believed to eliminate toxins from the body and restore the body's natural healing ability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="backwaters">
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-img">
+                            <img src="assets/houseboat.jpeg" alt="Houseboat Cruise">
+                        </div>
+                        <div class="experience-info">
+                            <h3>Houseboat Cruise</h3>
+                            <p>Glide through the serene backwaters of Kerala on a traditional houseboat, locally known as 'Kettuvallam'. These floating cottages offer a unique way to experience the rustic village life and breathtaking scenery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="experience-img">
+                            <img src="assets/Canoe Ride.jpeg" alt="Canoe Ride">
+                        </div>
+                        <div class="experience-info">
+                            <h3>Village Canoe Ride</h3>
+                            <p>Explore the narrow canals and waterways in a traditional canoe for an intimate experience of the backwater life. Witness the daily activities of villagers, paddy fields, coconut groves and aquatic birds.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="experience-img">
+                            <img src="assets/Backwater Resorts.jpeg" alt="Backwater Resorts">
+                        </div>
+                        <div class="experience-info">
+                            <h3>Backwater Resorts</h3>
+                            <p>Stay at luxurious resorts nestled along the banks of Kerala's backwaters. Wake up to the sight of fishermen in their canoes, enjoy authentic Kerala cuisine and experience unparalleled tranquility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Beaches Tab -->
+<div class="tab-content" id="beaches">
+    <div class="experience-grid">
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/Varkala Beach.jpeg" alt="Varkala Beach">
+            </div>
+            <div class="experience-info">
+                <h3>Varkala Beach</h3>
+                <p>Famous for its cliffside views and mineral springs, Varkala is both a scenic retreat and spiritual destination.</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/Kovalam beach - Kerala, India.jpeg" alt="Kovalam Beach">
+            </div>
+            <div class="experience-info">
+                <h3>Kovalam Beach</h3>
+                <p>One of Kerala’s most popular beaches, known for its crescent-shaped coastline and lighthouse views.</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/Bekal Fort Beach, Kasargode.jpeg" alt="Bekal Beach">
+            </div>
+            <div class="experience-info">
+                <h3>Bekal Beach</h3>
+                <p>Home to the iconic Bekal Fort, this beach offers tranquility and history in equal measure.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Wildlife Tab -->
+<div class="tab-content" id="wildlife">
+    <div class="experience-grid">
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/Periyar Wildlife Sanctuary.jpeg" alt="Periyar Wildlife Sanctuary">
+            </div>
+            <div class="experience-info">
+                <h3>Periyar Wildlife Sanctuary</h3>
+                <p>Located in Thekkady, Periyar is a rich habitat of elephants, tigers, and exotic birds amidst dense forests.</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/wayanadwild.jpeg" alt="Wayanad Wildlife">
+            </div>
+            <div class="experience-info">
+                <h3>Wayanad Wildlife Sanctuary</h3>
+                <p>This lush sanctuary is home to leopards, elephants, and a variety of flora and fauna.</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/Chinnar Wildlife Sanctuary.jpeg" alt="Chinnar Wildlife Sanctuary">
+            </div>
+            <div class="experience-info">
+                <h3>Chinnar Wildlife Sanctuary</h3>
+                <p>Located in the rain shadow area of the Western Ghats, it's known for endangered giant grizzled squirrels.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Festivals Tab -->
+<div class="tab-content" id="festivals">
+    <div class="experience-grid">
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/onam.jpeg" alt="Onam Festival">
+            </div>
+            <div class="experience-info">
+                <h3>Onam</h3>
+                <p>Kerala's biggest harvest festival, celebrated with floral carpets, traditional feasts, and Vallam Kali (boat race).</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/Theyyam on Behance.jpeg" alt="Theyyam Festival">
+            </div>
+            <div class="experience-info">
+                <h3>Theyyam</h3>
+                <p>A ritualistic dance form that blends theatre, music, and religious devotion, popular in North Kerala.</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-img">
+                <img src="assets/Thrissur Pooram.jpeg" alt="Thrissur Pooram">
+            </div>
+            <div class="experience-info">
+                <h3>Thrissur Pooram</h3>
+                <p>The most famous temple festival in Kerala, known for its magnificent elephant processions and fireworks.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+    
+<section class="where-to-stay" id="where-to-stay">
+    <h2 class="section-title">Where to Stay in Kerala</h2>
+    
+    <div class="accommodation-grid">
+        <!-- Luxury Resorts -->
+        <div class="accommodation-card">
+            <div class="accommodation-img">
+                <img src="assets/Luxury Resorts.jpeg" alt="Luxury Resorts">
+            </div>
+            <div class="accommodation-info">
+                <h3>Luxury Resorts</h3>
+                <p>Experience world-class hospitality at Kerala's premium resorts with private beaches, infinity pools, and ayurvedic spas.</p>
+                <div class="accommodation-links">
+                    <a href="#">View Resorts</a>
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Houseboats -->
+        <div class="accommodation-card">
+            <div class="accommodation-img">
+                <img src="assets/houseboat.jpeg" alt="Houseboats">
+            </div>
+            <div class="accommodation-info">
+                <h3>Houseboats</h3>
+                <p>Stay overnight on traditional Kettuvallams (houseboats) cruising through Kerala's serene backwaters.</p>
+                <div class="accommodation-links">
+                    <a href="#">View Options</a>
+                    <a href="#">Book Cruise</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Homestays -->
+        <div class="accommodation-card">
+            <div class="accommodation-img">
+                <img src="assets/Homestays.jpeg" alt="Homestays">
+            </div>
+            <div class="accommodation-info">
+                <h3>Homestays</h3>
+                <p>Experience authentic Kerala hospitality by staying with local families in traditional homes.</p>
+                <div class="accommodation-links">
+                    <a href="#">Browse Homestays</a>
+                    <a href="#">Contact Hosts</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Budget Hotels -->
+        <div class="accommodation-card">
+            <div class="accommodation-img">
+                <img src="assets/Budget Hotels.jpeg" alt="Budget Hotels">
+            </div>
+            <div class="accommodation-info">
+                <h3>Budget Hotels</h3>
+                <p>Affordable yet comfortable accommodation options across Kerala's major tourist destinations.</p>
+                <div class="accommodation-links">
+                    <a href="#">View Hotels</a>
+                    <a href="#">Check Rates</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add after the Where to Stay section -->
+<section class="things-to-do" id="things-to-do">
+    <h2 class="section-title">Things to Do in Kerala</h2>
+    
+    <div class="activities-tabs">
+        <button class="activity-tab active" data-tab="adventure">Adventure</button>
+        <button class="activity-tab" data-tab="culture">Culture</button>
+        <button class="activity-tab" data-tab="nature">Nature</button>
+        <button class="activity-tab" data-tab="wellness">Wellness</button>
+    </div>
+    
+    <div class="activities-content active" id="adventure">
+        <div class="activities-grid">
+            <div class="activity-card">
+                <img src="assets/Bamboo Rafting, Loksado, South Kalimantan.jpeg" alt="Bamboo Rafting">
+                <h3>Bamboo Rafting</h3>
+                <p>Experience unique bamboo rafting in Periyar's tiger reserve, spotting wildlife along the way.</p>
+            </div>
+            
+            <div class="activity-card">
+                <img src="assets/Trekking.jpeg" alt="Trekking">
+                <h3>Trekking</h3>
+                <p>Explore Kerala's Western Ghats with guided treks to Anamudi, Chembra Peak, and more.</p>
+            </div>
+            
+            <div class="activity-card">
+                <img src="assets/Water Sports.jpeg" alt="Water Sports">
+                <h3>Water Sports</h3>
+                <p>Enjoy kayaking, parasailing, and jet skiing at Kovalam, Varkala, and Bekal beaches.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="activities-content" id="culture">
+        <div class="activities-grid">
+            <div class="activity-card">
+                <img src="assets/kathakalidance.jpeg" alt="Kathakali Show">
+                <h3>Kathakali Shows</h3>
+                <p>Witness this classical dance-drama with elaborate costumes and expressive movements.</p>
+            </div>
+            
+            <div class="activity-card">
+                <img src="assets/Theyyam on Behance.jpeg" alt="Theyyam">
+                <h3>Theyyam Rituals</h3>
+                <p>Experience this ancient ritualistic performance art form in North Kerala temples.</p>
+            </div>
+            
+            <div class="activity-card">
+                <img src="assets/Cooking Class.jpeg" alt="Cooking Class">
+                <h3>Cooking Classes</h3>
+                <p>Learn to prepare authentic Kerala dishes like appam, stew, and seafood delicacies.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Nature Tab -->
+<div class="activities-content" id="nature">
+    <div class="activities-grid">
+        <div class="activity-card">
+            <img src="assets/Silent Valley National Park.jpeg" alt="Silent Valley National Park">
+            <h3>Silent Valley National Park</h3>
+            <p>Explore one of India's last undisturbed rainforests with unique biodiversity in Palakkad district.</p>
+        </div>
+        
+        <div class="activity-card">
+            <img src="assets/athira.jpeg" alt="Athirapally Waterfalls">
+            <h3>Athirapally Waterfalls</h3>
+            <p>Witness the majestic 'Niagara of India' surrounded by lush green forests.</p>
+        </div>
+        
+        <div class="activity-card">
+            <img src="assets/Mangrove Forests.jpeg" alt="Mangrove Forests">
+            <h3>Mangrove Forests</h3>
+            <p>Take a boat ride through Kerala's unique mangrove ecosystems in Kannur and Ernakulam.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Wellness Tab -->
+<div class="activities-content" id="wellness">
+    <div class="activities-grid">
+        <div class="activity-card">
+            <img src="assets/Ayurveda Retreats.jpeg" alt="Ayurveda Retreat">
+            <h3>Ayurveda Retreats</h3>
+            <p>Experience authentic Ayurvedic treatments and rejuvenation programs at traditional centers.</p>
+        </div>
+        
+        <div class="activity-card">
+            <img src="assets/yoga.jpeg" alt="Yoga Sessions">
+            <h3>Yoga Sessions</h3>
+            <p>Join daily yoga classes on the beach or at dedicated wellness centers across Kerala.</p>
+        </div>
+        
+        <div class="activity-card">
+            <img src="assets/Meditation.jpeg" alt="Meditation">
+            <h3>Meditation Retreats</h3>
+            <p>Find inner peace with guided meditation sessions in Kerala's tranquil settings.</p>
+        </div>
+    </div>
+</div>
+    
+    
+</section>
+
+<!-- Add after the Things to Do section -->
+
+
+<!-- Booking Packages Section -->
+<section class="booking-packages">
+    <h2 class="section-title">Tour Packages</h2>
+    
+    <div class="packages-grid">
+        <!-- Package 1 -->
+        <div class="package-card">
+            <div class="package-img">
+                <img src="assets/Backwater Bliss.jpeg" alt="Backwater Bliss">
+                <div class="package-price">₹15,999<span>/person</span></div>
+            </div>
+            <div class="package-info">
+                <h3>Backwater Bliss</h3>
+                <div class="package-duration">3 Days / 2 Nights</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Houseboat stay in Alleppey</li>
+                    <li><i class="fas fa-check"></i> Traditional Kerala meals</li>
+                    <li><i class="fas fa-check"></i> Village canoe ride</li>
+                    <li><i class="fas fa-check"></i> Sunset cruise</li>
+                </ul>
+                <div class="package-actions">
+                    <button class="package-details-btn">View Details</button>
+                    <button class="package-book-btn" data-package="backwater-bliss">Book Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Package 2 -->
+        <div class="package-card">
+            <div class="package-img">
+                <img src="assets/Hill Station Retreat.jpeg" alt="Hill Station Retreat">
+                <div class="package-price">₹18,500<span>/person</span></div>
+            </div>
+            <div class="package-info">
+                <h3>Hill Station Retreat</h3>
+                <div class="package-duration">4 Days / 3 Nights</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Stay in Munnar &amp; Thekkady</li>
+                    <li><i class="fas fa-check"></i> Tea plantation tour</li>
+                    <li><i class="fas fa-check"></i> Periyar wildlife safari</li>
+                    <li><i class="fas fa-check"></i> Spice garden visit</li>
+                </ul>
+                <div class="package-actions">
+                    <button class="package-details-btn">View Details</button>
+                    <button class="package-book-btn" data-package="hillstation-retreat">Book Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Package 3 -->
+        <div class="package-card">
+            <div class="package-img">
+                <img src="assets/Beach Paradise.jpeg" alt="Beach Paradise">
+                <div class="package-price">₹22,000<span>/person</span></div>
+            </div>
+            <div class="package-info">
+                <h3>Beach Paradise</h3>
+                <div class="package-duration">5 Days / 4 Nights</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Beach resorts in Kovalam &amp; Varkala</li>
+                    <li><i class="fas fa-check"></i> Ayurvedic massage sessions</li>
+                    <li><i class="fas fa-check"></i> Lighthouse visit</li>
+                    <li><i class="fas fa-check"></i> Water sports activities</li>
+                </ul>
+                <div class="package-actions">
+                    <button class="package-details-btn">View Details</button>
+                    <button class="package-book-btn" data-package="beach-paradise">Book Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Package 4 -->
+        <div class="package-card">
+            <div class="package-img">
+                <img src="assets/Complete Kerala.jpeg" alt="Complete Kerala">
+                <div class="package-price">₹35,000<span>/person</span></div>
+            </div>
+            <div class="package-info">
+                <h3>Complete Kerala</h3>
+                <div class="package-duration">7 Days / 6 Nights</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Backwaters, hills &amp; beaches</li>
+                    <li><i class="fas fa-check"></i> Heritage hotel in Fort Kochi</li>
+                    <li><i class="fas fa-check"></i> Kathakali performance</li>
+                    <li><i class="fas fa-check"></i> All meals included</li>
+                </ul>
+                <div class="package-actions">
+                    <button class="package-details-btn">View Details</button>
+                    <button class="package-book-btn" data-package="complete-kerala">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Booking Modal -->
+<div id="bookingModal" class="booking-modal">
+    <div class="booking-modal-content">
+        <span class="close-booking">&times;</span>
+        <h2>Book Your Package</h2>
+        <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+                <label for="packageName">Package:</label>
+                <input type="text" id="packageName" readonly>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bookingName">Full Name:</label>
+                    <input type="text" id="bookingName" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingEmail">Email:</label>
+                    <input type="email" id="bookingEmail" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bookingPhone">Phone:</label>
+                    <input type="tel" id="bookingPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingDate">Travel Date:</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="bookingGuests">Number of Guests:</label>
+                <select id="bookingGuests" required>
+                    <option value="">Select</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5+">5+ People</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="bookingNotes">Special Requirements:</label>
+                <textarea id="bookingNotes" rows="3"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-booking">Confirm Booking</button>
+        </form>
+    </div>
+</div>
+
+<!-- Booking Confirmation Modal -->
+<div id="confirmationModal" class="confirmation-modal">
+    <div class="confirmation-content">
+        <span class="close-confirmation">&times;</span>
+        <div class="confirmation-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h2>Booking Confirmed!</h2>
+        <p>Thank you for booking with Kerala Tourism. Your booking reference is: <strong id="bookingRef"></strong></p>
+        <p>We've sent the details to your email address.</p>
+        <button class="confirmation-close-btn">Close</button>
+    </div>
+</div>
+
+<section class="travel-care" id="travel-care">
+    <h2 class="section-title">Travel Care</h2>
+    
+    <div class="care-grid">
+        <div class="care-card">
+            <div class="care-icon">
+                <i class="fas fa-passport"></i>
+            </div>
+            <h3>Visa & Immigration</h3>
+            <p>Information on visa requirements, e-visa facilities, and immigration procedures for international travelers.</p>
+            <a href="#">Learn More</a>
+        </div>
+        
+        <div class="care-card">
+            <div class="care-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Safety Tips</h3>
+            <p>Essential safety information, emergency contacts, and travel advisories for a secure Kerala experience.</p>
+            <a href="#">View Safety Guide</a>
+        </div>
+        
+        <div class="care-card">
+            <div class="care-icon">
+                <i class="fas fa-medkit"></i>
+            </div>
+            <h3>Health Information</h3>
+            <p>Vaccination recommendations, hospital listings, and ayurvedic treatment guidelines for travelers.</p>
+            <a href="#">Health Resources</a>
+        </div>
+        
+        <div class="care-card">
+            <div class="care-icon">
+                <i class="fas fa-wheelchair"></i>
+            </div>
+            <h3>Accessible Travel</h3>
+            <p>Resources and information for travelers with disabilities or special needs visiting Kerala.</p>
+            <a href="#">Accessibility Info</a>
+        </div>
+        
+        <div class="care-card">
+            <div class="care-icon">
+                <i class="fas fa-child"></i>
+            </div>
+            <h3>Traveling with Kids</h3>
+            <p>Family-friendly destinations, activities, and facilities across Kerala for travelers with children.</p>
+            <a href="#">Family Travel Guide</a>
+        </div>
+        
+        <div class="care-card">
+            <div class="care-icon">
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <h3>FAQs</h3>
+            <p>Answers to frequently asked questions about traveling in Kerala, from transportation to cultural etiquette.</p>
+            <a href="#">View FAQs</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Image Gallery Section -->
+    <section class="image-gallery">
+        <div class="destinations">
+            <h2 class="section-title">Kerala in Pictures</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="assets/Athirappilly Waterfalls.jpeg" alt="Athirappilly Waterfalls">
+                    <div class="gallery-caption">
+                        <h3>Athirappilly Waterfalls</h3>
+                        <p>Often called the 'Niagara of India'</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/Kochi Beach.jpeg" alt="Kochi Beach">
+                    <div class="gallery-caption">
+                        <h3>Fort Kochi Beach</h3>
+                        <p>Historic beach with Chinese fishing nets</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/Periyar Wildlife.jpeg" alt="Periyar Wildlife">
+                    <div class="gallery-caption">
+                        <h3>Periyar Wildlife Sanctuary</h3>
+                        <p>Home to elephants, tigers and more</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/Varkala Cliffs.jpeg" alt="Varkala Cliffs">
+                    <div class="gallery-caption">
+                        <h3>Varkala Cliffs</h3>
+                        <p>Stunning laterite cliffs overlooking the Arabian Sea</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/Kumarakom.jpeg" alt="Kumarakom">
+                    <div class="gallery-caption">
+                        <h3>Kumarakom Backwaters</h3>
+                        <p>Serene village on Vembanad Lake</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/Theyyam.jpeg" alt="Theyyam">
+                    <div class="gallery-caption">
+                        <h3>Theyyam Ritual</h3>
+                        <p>Ancient ritual dance form of North Kerala</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/Neelakurinji.jpeg" alt="Neelakurinji">
+                    <div class="gallery-caption">
+                        <h3>Neelakurinji Flowers</h3>
+                        <p>Blooms once every 12 years in Munnar</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/Kathakali.jpeg" alt="Kathakali">
+                    <div class="gallery-caption">
+                        <h3>Kathakali Performance</h3>
+                        <p>Classical dance-drama of Kerala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on Kerala Tourism, exclusive offers, and travel tips directly to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Kerala</h3>
+                <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Geography</a></li>
+                    <li><a href="#">Climate</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Arts & Crafts</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Plan Your Trip</h3>
+                <ul>
+                    <li><a href="#">How to Reach</a></li>
+                    <li><a href="#">Best Time to Visit</a></li>
+                    <li><a href="#">Travel Tips</a></li>
+                    <li><a href="#">Tour Packages</a></li>
+                    <li><a href="#">Tourist Helpline</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Photo Gallery</a></li>
+                    <li><a href="#">Video Gallery</a></li>
+                    <li><a href="#">Events Calendar</a></li>
+                    <li><a href="#">E-Brochures</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Department of Tourism, Government of Kerala</li>
+                    <li>Park View, Thiruvananthapuram</li>
+                    <li>Kerala, India - 695 033</li>
+                    <li>Phone: +91 471 2321132</li>
+                    <li>Email: info@keralatourism.org</li>
+                </ul>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Kerala Tourism. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
