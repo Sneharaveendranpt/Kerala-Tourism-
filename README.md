@@ -38,3 +38,31 @@ You only need a modern web browser. No installation required.
 1. Clone the repository:
    ```bash
    git clone https://github.com/Sneharaveendranpt/Kerala-Tourism-.git
+2. Navigate to the project folder:
+cd Kerala-Tourism-
+3. Open index.html in your browser (double-click or right-click → “Open with …”).
+
+Project Structure
+/assets           → contains images, icons, any media  
+index.html       → main HTML entry point  
+style.css        → CSS file for styling  
+script.js        → JavaScript file for slider/modal logic 
+
+🎨 Technologies Used
+HTML5 for semantic markup
+CSS3 including media queries for responsiveness
+JavaScript (ES6) for slider transitions, modal control
+No frameworks or libraries (pure vanilla)
+
+✅ Usage & Customization
+You may replace the images in the /assets folder with your own high-quality photos of Kerala to personalize the site.
+Edit the “Where to Stay” and “Things to Do” sections in index.html to update destination listings.
+Modify style.css for theming (colors, fonts) to match your brand or style.
+Extend script.js to add more interactive features (e.g., filtering, more slides, transition effects).
+
+📧 Contact
+
+For any questions or suggestions, feel free to open an Issue on GitHub or contact me via email: sneharavi7534@gmail.com
+
+
+Thank you for visiting the Kerala-Tourism project. I hope you enjoy exploring and customizing it!
